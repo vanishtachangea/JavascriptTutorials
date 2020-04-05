@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Popup</title>
+    <script>
+    window.addEventListener("load", function()
+    {
+        "use strict";
+        var mybuttion = window.document.getElementById("idClose2");
+        mybuttion.addEventListener("click", function()
+        {
+            alert("Closing");
+            window.close();
+        });
+
+    });
+    </script>
+</head>
+
+<body>
+    <button  type="button" id="idClose" onclick="javascript:window.close();">Close Window</button>
+    <button  type="button" id="idClose2" >Close Window with load listener</button>
+    <script src="script.js?v=5"></script>
+</body>
+</html>
